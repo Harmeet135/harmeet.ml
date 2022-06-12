@@ -1,0 +1,663 @@
+body{
+    margin: 0;
+    padding: 0%;
+    background: #0a192f;
+
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+#name {
+    font-family:sans-serif;
+}
+
+.name{
+    font-family: sans-serif;
+}
+
+
+/* ------------- burger   --------- */
+
+.burger{
+       position: fixed;
+        display: none;
+        right: -1%;
+        top: 20%;
+        margin-top: 1%;
+    }
+
+
+    .line {
+        width: 33px;
+        background-color: #64ffda;
+        height: 2.5px;
+        margin: 6px 3px;
+        -webkit-transition: all 0.3s;
+        transition: transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+    }
+
+    .line:nth-child(2){
+
+        width: 23px;
+    }
+
+    .line:nth-child(3){
+        width: 13px;
+    }
+
+
+
+/* ---- navbar ----- */
+
+#About{
+    transition: all 0.2 ;
+}
+
+
+.navbar {
+    position: fixed;
+    z-index: 13;
+    /* position: fixed; */
+    /* display: none; */
+    width: 100%;
+    display: flex;
+    /* justify-content: end; */
+    background-color: rgba(10, 25, 47, 0.85);
+    /* padding: 0px 184px; */
+    box-shadow: 0 10px 30px -10px rgb(2 12 27 / 70%);
+    height: 70px;
+    transform: translateY(0px);
+    background-color: rgba(10, 25, 47, 0.85);
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    font-size: 15px;
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    filter: none !important;
+    pointer-events: auto !important;
+    user-select: auto !important;
+}
+
+
+.navbarlist {
+    display: flex;
+    margin-left: 57%;
+}
+
+.navbarlist li{
+    margin-top: 8px;
+    margin-right: 16%;
+    list-style-type: decimal;
+    
+}
+
+.navbarlist li a{
+    color: #ccd6f6;
+    text-decoration: none;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    font-size: 15px;
+ 
+}
+
+.navbarlist li a:hover{
+    color: #64ffda; 
+}
+
+
+::marker {
+    color: #64ffda;
+}
+
+.resume-button {
+    
+    background-color: transparent;
+    border: 1px solid #64ffda;
+    border-radius: 4px;;
+    padding: 0.5rem 1rem;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    margin-left: 12px;
+    list-style-type: none;  
+}
+
+
+
+#test a{
+    color: #64ffda;
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+
+/* ----- left section ------ */
+
+
+
+#vertical-line-left {
+    width: 1px;
+    height: 88px;
+    background-color: #f3faf8;
+    margin-left: 8px;
+    bottom: 0px;
+    position: fixed;
+}
+
+ul.icons1 {
+    text-decoration: none;
+    list-style: none;
+    margin-left: 14px;
+    bottom: 84px;
+    position: fixed;
+}
+
+
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/2 FontAwesome;
+}
+
+i.fa.fa-github:hover::before {
+    color:#64ffda;
+    
+    
+}
+
+i.fa.fa-github:hover , i.fa.fa-instagram:hover , i.fa.fa-linkedin:hover , i.fa.fa-envelope:hover , a.mail:hover  {
+    transition:  all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    transform: translateY(-5px);
+}
+
+i.fa.fa-linkedin:hover::before {
+    color:#64ffda;
+}
+
+i.fa.fa-envelope:hover::before {
+    color:#64ffda;
+}
+
+
+/* ----- right section ------ */
+
+
+.right-side {
+    writing-mode: vertical-rl;
+}
+
+
+#vertical-line-right {
+    width: 1px;
+    height: 88px;
+    background-color: #a8b2d1;
+    bottom: 0px;
+    position: fixed;
+    right: 55px;
+    color: aqua;  
+}
+
+a.mail {
+    text-decoration: none;
+    color: #a8b2d1;
+    right: 45px;
+    bottom: 121px;
+    position: fixed;
+    font-family:monospace;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+}
+
+a.mail:hover {
+    color:#64ffda;
+    transition:  all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+}
+
+
+
+/* ----- middle section ------ */
+
+
+.intro-section{
+    height: 27vw;
+    margin: 0px 0px;
+    
+}
+
+.intro h1{
+        margin: 14% 0% 0% 19%;
+        color: #64ffda;
+        font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+        font-size: clamp(14px,5vw,16px);
+        font-weight: 400;
+}
+
+
+h1.uu {
+    margin-left: 2%;
+}
+
+
+.name {
+    margin: -2% 0% 0% 17%;
+    font-size: clamp(40px, 3vw, 80px);
+    font-weight: 600;
+    color: #ccd6f6;
+    line-height: 1.1;
+}
+
+h1#name {
+    margin-top: -50px;
+    color: #8892b0;
+}
+
+
+/* ------ ABOUT Section ----- */
+
+
+#me {
+    margin-left: 35%;
+    height: 18vw;
+}
+
+
+.about {
+    margin: 5% 45% 0% 24%;
+    height: 30vw;
+}
+
+
+#about{
+    display: flex;
+}
+
+.combine {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 24px;
+}
+
+.number{
+    font-weight: 600;
+    color: #64ffda;
+    line-height: 1.1;
+}
+
+h2{
+    font-weight: 600;
+    color: #ccd6f6;
+    line-height: 1.1;
+    padding-left: 10px;
+        white-space: nowrap;
+        font-family: sans-serif;
+
+}
+
+.horizontal-line {
+    width: 300px;
+    height: 1px;
+    background-color: #1c2e4a;
+    margin-top: 34px;
+    margin-left: 20px;
+    color: aqua;  
+}
+
+p {
+    margin: 0px 11px 15px;
+    color: #8892b0;
+    font-size: larger;
+}
+
+.tech {
+    display: flex;
+}
+
+.tech ul li{
+    list-style-type: none;
+    color: #8892b0;
+}
+
+.tech ul li::before {
+    content: "▹";
+    color: #64ffda;
+    line-height: 30px;
+    padding-right: 11px;
+}
+
+
+/* ------ Project Section ----- */
+
+
+.project {
+    margin: 10% 17% 0% 17%;
+    height: 83vw;
+}
+
+/* ------ Project 1 ----- */
+
+
+.spotify{
+ 
+    display: flex;
+}
+
+#spotify {
+    /* background: rgba(15, 242, 204, 0.99); */
+    background: rgb(1 205 179 / 90%);
+    position: absolute;
+    height: 44.1%;
+    width: 36.3%;
+}
+
+
+#spotify img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+#spotify img:hover{
+    opacity: 1;
+}
+
+.spotify-info {
+    width: 100%;
+    text-align: end;
+}
+
+.spotify-box {
+    box-shadow: 0 10px 30px -15px rgb(2 12 27 / 70%);
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    position: relative;
+    z-index: 2;
+    padding: 25px;
+    border-radius: 4px;
+    background-color: #112240;
+    color: #a8b2d1;
+    font-size: 18px;
+    width: 33vw;
+    margin-left: 29vw;
+}
+
+h4 {
+    word-spacing: 25px;
+    color: #ccd6f6;
+}
+
+.s-fa{
+    font: normal normal normal 14px/1 FontAwesome;
+}
+
+
+/* ------ Project 2  ----- */
+
+
+#project2{
+    background: rgba(15, 242, 204, 0.99);
+    height: 44.1%;
+    width: 36.3%;
+    margin-left: 31vw;
+    position: absolute;
+    /* z-index: 3; */
+}
+
+#project2 img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    
+}
+
+
+#project2 img:hover{
+    opacity: 1;
+    
+}
+
+.project2-info {
+    width: 100%;
+    text-align: start;
+    margin-top: 100px;
+}
+
+h3 {
+    color: #64ffda;
+    position: relative;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: monospace;
+}
+
+.project2-box {
+    box-shadow: 0 10px 30px -15px rgb(2 12 27 / 70%);
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    position: relative;
+    z-index: 2;
+    padding: 25px;
+    border-radius: 4px;
+    background-color: #112240;
+    color: #a8b2d1;
+    font-size: 18px;
+    width: 33vw;
+    margin-right: 31vw;
+}
+
+h4 {
+    position: relative;
+    word-spacing: 25px;
+    color: #ccd6f6;
+    font-family:  "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    font-size: 15px;
+    white-space: nowrap;
+    font-weight: 500;
+}
+
+
+.project2-info p{
+    margin: 0px 0px 0px;
+}
+
+.project2-info h2{
+    padding-left: 0;
+}
+
+.z {
+    margin: 130px 0px 30px 0px;
+}
+
+.scroll_link , .scroll_linked{
+    color:#64ffda;
+    background-color: transparent;
+    border: 1px solid #64ffda;
+    border-radius: 4px;;
+    padding: 1.25rem 1.75rem;
+    font-size:15px;
+    font-family:sans-serif;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+}
+
+.scroll_link{
+    z-index: -1;
+}
+
+a#scroll_link , a#scroll_linked {
+    text-decoration: none;
+    color:#64ffda;
+}
+
+.scroll_link:hover , .scroll_linked:hover{
+    background-color: rgba(159, 243, 226, 0.1);
+
+}
+
+.zz{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 12vw;
+}
+
+.ee {
+    display: none;
+   
+}
+
+.gg {
+    margin: -9% 17% -6% 17%;
+    z-index: 2;
+    background-color: #0a192f;
+}
+
+
+
+/* -------  education ------- */
+
+
+section.education {
+    margin: 21% 45% 0% 20%;
+}
+
+.s-info {
+    display: flex;
+    width: 178%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 42px;
+}
+
+
+img#college {
+    width: 384px;
+    height: 212px;
+    margin-left: 8px;
+}
+
+
+.s-name {
+    text-align: end;
+}
+
+
+.s-name h3{
+        color: #64ffda;
+        font-size: 16px;
+        font-weight: 100;
+        word-spacing: 4px;
+        letter-spacing: 0.5px;
+    
+}
+
+
+.s-name h2{
+       
+        color: #ccd6f6;
+        line-height: 1.1;
+        font-size: 25px;
+        padding-left: 21px;
+        word-spacing: 4px;
+        letter-spacing: 0.5px;
+}
+
+
+.s-name h1{
+        color: #ccd6f6;
+        font-size: 20px;
+        font-weight: 500;
+        word-spacing: 4px;
+        letter-spacing: 0.5px;
+}
+
+
+.below{
+    width: 168%;
+}
+
+
+/* ----- contact section ------ */
+
+
+.contact {
+    max-width: 600px;
+    margin: 14vw auto 125px;
+    text-align: center;
+}
+
+
+.contact-head h1{
+    margin-bottom: 20px;
+    color: #64ffda;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+.contact h2{
+    font-family: sans-serif;
+    font-size: clamp(40px, 3vw, 80px);
+    font-weight: 600;
+    color: #ccd6f6;
+    line-height: 1.1;
+}
+
+
+.contact p {
+    margin: 0px 11px 95px;
+}
+
+
+.email-link{
+    color:#64ffda;
+    background-color: transparent;
+    border: 1px solid #64ffda;
+    border-radius: 4px;;
+    padding: 1.25rem 1.75rem;
+    font-size:15px;
+    font-family:sans-serif;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+}
+
+
+a#email-link {
+    text-decoration: none;
+    color:#64ffda;
+}
+
+
+.email-link:hover{
+    background-color: rgba(159, 243, 226, 0.1);
+
+}
+
+
+.invis{
+    display: none;
+}
+
+/* -------- footer -------- */
+
+.footer{
+        color: #8892b0;
+        font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+        font-size: 12px;
+        line-height: 1;
+        justify-content: center; 
+        display: flex;
+        margin: 30px 0px;
+        letter-spacing: 0.4px;
+        word-spacing: 1px;
+}
+
+
+.footer:hover{
+    color:#64ffda ;
+}
